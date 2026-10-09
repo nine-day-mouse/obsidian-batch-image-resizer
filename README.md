@@ -92,6 +92,17 @@ npm run build   # type check + production build
 
 All user-facing strings live in `i18n.ts`: add a field to the `Messages` interface and to both `STRINGS.en` and `STRINGS.zh`.
 
+## Releasing
+
+1. Bump the version in `manifest.json`, `package.json`, and add a matching entry to `versions.json`.
+2. Run `npm run build` and commit everything, including the rebuilt `main.js`.
+3. Tag and push — the [release workflow](.github/workflows/release.yml) builds the plugin and publishes a GitHub release with `main.js`, `manifest.json` and `styles.css` attached:
+
+   ```bash
+   git tag 1.2.1
+   git push origin 1.2.1
+   ```
+
 ## License
 
 [MIT](LICENSE)

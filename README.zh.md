@@ -94,6 +94,17 @@ npm run build   # 类型检查 + 生产构建
 
 文案都在 `i18n.ts`，新增一条只要在 `Messages` 接口和 `STRINGS.en` / `STRINGS.zh` 里各加一项即可。
 
+## 发布新版本
+
+1. 改 `manifest.json`、`package.json` 里的版本号，并在 `versions.json` 加一条对应记录。
+2. `npm run build`，然后把改动（包括重新生成的 `main.js`）一起提交。
+3. 打 tag 并推送 —— [release 工作流](.github/workflows/release.yml) 会自动构建，并把 `main.js`、`manifest.json`、`styles.css` 作为附件发一个 GitHub Release：
+
+   ```bash
+   git tag 1.2.1
+   git push origin 1.2.1
+   ```
+
 ## 许可证
 
 [MIT](LICENSE)
