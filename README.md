@@ -71,17 +71,30 @@ Things to know:
 - Whatever follows `|` in an image embed *is* the size in Obsidian, so an existing value there is replaced.
 - In editing mode the editor API is used, so the change can be undone with `Ctrl/Cmd + Z`.
 
-## Install manually
+## Install
 
-1. Build:
+### With BRAT (recommended)
 
-   ```bash
-   npm install
-   npm run build
-   ```
+[BRAT](https://github.com/TfTHacker/obsidian42-brat) installs plugins straight from a GitHub repository and keeps them up to date.
 
-2. Create `<vault>/.obsidian/plugins/batch-image-resizer/` and copy `main.js`, `manifest.json` and `styles.css` into it.
+1. Install **BRAT** from *Settings → Community plugins → Browse*.
+2. Open BRAT's settings and click **Add Beta plugin**.
+3. Paste `nine-day-mouse/obsidian-batch-image-resizer` and confirm.
+
+### Manually
+
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/nine-day-mouse/obsidian-batch-image-resizer/releases/latest).
+2. Put them in `<vault>/.obsidian/plugins/batch-image-resizer/`.
 3. Settings → Community plugins → turn off Restricted mode → enable **Batch Image Resizer**.
+
+### From source
+
+```bash
+npm install
+npm run build
+```
+
+Then copy `main.js`, `manifest.json` and `styles.css` into `<vault>/.obsidian/plugins/batch-image-resizer/`.
 
 ## Development
 

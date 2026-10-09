@@ -73,17 +73,30 @@
 - 图片嵌入的 `|` 后面在 Obsidian 里就是尺寸，所以原来的 `|` 内容会被新尺寸覆盖。
 - 编辑模式下走编辑器替换接口，可以 `Ctrl/Cmd + Z` 撤销。
 
-## 安装到你的 Vault
+## 安装
 
-1. 构建：
+### 用 BRAT 安装（推荐）
 
-   ```bash
-   npm install
-   npm run build
-   ```
+[BRAT](https://github.com/TfTHacker/obsidian42-brat) 可以直接从 GitHub 仓库安装插件，并且能自动跟进后续更新。
 
-2. 在你的 Vault 里建目录 `<Vault>/.obsidian/plugins/batch-image-resizer/`，把 `main.js`、`manifest.json`、`styles.css` 复制进去。
-3. Obsidian 设置 → 第三方插件 → 关闭安全模式 → 找到 **Batch Image Resizer** 并启用。
+1. 在「设置 → 第三方插件 → 浏览」里搜索并安装 **BRAT**。
+2. 打开 BRAT 的设置，点 **Add Beta plugin**。
+3. 填入 `nine-day-mouse/obsidian-batch-image-resizer`，确认添加。
+
+### 手动安装
+
+1. 从 [最新 Release](https://github.com/nine-day-mouse/obsidian-batch-image-resizer/releases/latest) 下载 `main.js`、`manifest.json`、`styles.css`。
+2. 放进 `<Vault>/.obsidian/plugins/batch-image-resizer/`。
+3. Obsidian 设置 → 第三方插件 → 关闭安全模式 → 启用 **Batch Image Resizer**。
+
+### 从源码构建
+
+```bash
+npm install
+npm run build
+```
+
+然后把 `main.js`、`manifest.json`、`styles.css` 复制到 `<Vault>/.obsidian/plugins/batch-image-resizer/`。
 
 ## 开发
 
