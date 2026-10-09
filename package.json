@@ -16,7 +16,7 @@
 	"author": "nine-day-mouse",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nine-day-mouse/batch_image_resizer.git"
+		"url": "https://github.com/nine-day-mouse/obsidian-batch-image-resizer.git"
 	},
 	"devDependencies": {
 		"@types/node": "^16.18.0",
