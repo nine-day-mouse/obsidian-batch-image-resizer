@@ -1,0 +1,4 @@
+# Keep line endings on LF everywhere.
+# esbuild writes main.js with LF, so forcing LF in the working tree stops
+# the build output from showing up as "modified" after every checkout.
+* text=auto eol=lf
