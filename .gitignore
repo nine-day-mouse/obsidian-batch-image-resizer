@@ -1,8 +1,3 @@
-# build output
-main.js
-*.js.map
-*.css.map
-
 # dependencies
 node_modules/
 
@@ -11,3 +6,11 @@ data.json
 
 # system
 .DS_Store
+
+# source maps are only produced by `npm run dev`
+*.js.map
+*.css.map
+
+# NOTE: main.js is tracked on purpose, so the plugin can be installed
+# straight from the repository without running a build. Remember to run
+# `npm run build` and commit it again after every source change.
