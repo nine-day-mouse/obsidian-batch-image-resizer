@@ -1,6 +1,6 @@
 # Batch Image Resizer
 
-Set every image in the **current note** to one display size, or clear all sizes at once. Bilingual UI (English / 简体中文).
+An [Obsidian](https://obsidian.md) plugin that sets every image in the **current note** to one display size — or clears all sizes at once. Bilingual UI (English / 简体中文), and it protects the images you resized by hand.
 
 Only the Obsidian size syntax is rewritten — your image files are never touched:
 
