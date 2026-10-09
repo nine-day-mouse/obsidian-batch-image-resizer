@@ -1,0 +1,10 @@
+{
+	"id": "batch-image-resizer",
+	"name": "Batch Image Resizer",
+	"version": "1.2.1",
+	"minAppVersion": "1.0.0",
+	"description": "Batch set or clear the display size of every image in the current note, e.g. ![[image.png|500]].",
+	"author": "nine-day-mouse",
+	"authorUrl": "https://github.com/nine-day-mouse",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,35 @@
+.image-resizer-hint {
+	margin-top: 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.image-resizer-input {
+	width: 100%;
+	margin-bottom: var(--size-4-3);
+}
+
+.image-resizer-presets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--size-4-2);
+	margin-bottom: var(--size-4-3);
+}
+
+.image-resizer-protect {
+	padding: 0;
+	margin-bottom: var(--size-4-3);
+	border-top: none;
+}
+
+.image-resizer-actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--size-4-2);
+}
+
+/* Pushed to the far left, away from Apply / Cancel. */
+.image-resizer-clear {
+	margin-right: auto;
+}
